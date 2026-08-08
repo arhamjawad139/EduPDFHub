@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - EduPDF Hub</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Terms and Conditions for using EduPDF Hub services, automated tools, and content access.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts & Bootstrap Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+            --primary: #2563eb;
+            --bg-body: #f0f6ff;
+            --bg-card: rgba(255, 255, 255, 0.85);
+            --bg-input: rgba(241, 245, 249, 0.9);
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --text-inverse: #ffffff;
+            --border-color: rgba(226, 232, 240, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.4);
+            --shadow-sm: 0 4px 6px -1px rgba(37, 99, 235, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(37, 99, 235, 0.15);
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-body: #0b1120;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --bg-input: rgba(15, 23, 42, 0.8);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: rgba(51, 65, 85, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: var(--bg-body);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.15) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .glass {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: var(--radius-lg);
+            padding: 12px 24px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-logo i {
+            font-size: 1.8rem;
+            color: var(--primary);
+            -webkit-text-fill-color: initial;
+        }
+
+        .icon-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-main);
+            background: var(--bg-input);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .icon-btn:hover {
+            transform: translateY(-2px);
+            color: var(--primary);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        /* Main Terms Content */
+        .content-card {
+            margin: 30px 0 60px 0;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            line-height: 1.7;
+        }
+
+        .page-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .page-title i {
+            color: var(--primary);
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .terms-section {
+            margin-bottom: 28px;
+        }
+
+        .terms-section h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terms-section p, .terms-section ul {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .terms-section ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        .terms-section ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        .terms-section ul li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-color);
+            background: var(--bg-card);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .content-card { padding: 24px; }
+            .page-title { font-size: 1.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="container navbar">
+        <nav class="navbar-content glass">
+            <a href="index.html" class="brand-logo">
+                <i class="bi bi-file-earmark-pdf-fill"></i>
+                EduPDF Hub
+            </a>
+            <div style="display: flex; gap: 10px;">
+                <button class="icon-btn" id="themeToggleBtn" title="Toggle Theme" onclick="toggleTheme()">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <a href="index.html" class="btn glass" style="font-size: 0.9rem;">
+                    <i class="bi bi-arrow-left"></i> Home
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Terms Document -->
+    <main class="container">
+        <div class="content-card glass">
+            <h1 class="page-title">
+                <i class="bi bi-shield-check"></i> Terms and Conditions
+            </h1>
+            <div class="last-updated">
+                Last Updated: August 8, 2026
+            </div>
+
+            <div class="terms-section">
+                <h2>1. Acceptance of Agreement</h2>
+                <p>By accessing or using EduPDF Hub, its subdomains, automated Telegram bots, or administrative tools, you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>2. Service Usage & Educational Content</h2>
+                <p>EduPDF Hub provides open-access digital study materials, academic guides, and educational reference files for non-commercial, educational use only.</p>
+                <ul>
+                    <li>Users are expected to download materials solely for personal learning, teaching, or research purposes.</li>
+                    <li>Attempting to re-sell, redistribute, or commercially exploit materials hosted on or indexed by this platform is strictly forbidden.</li>
+                </ul>
+            </div>
+
+            <div class="terms-section">
+                <h2>3. User Accounts & Admin Portal Security</h2>
+                <p>Certain management features and administrative dashboards are restricted to authorized administrators.</p>
+                <ul>
+                    <li>You are solely responsible for protecting administrative access credentials and preventing unauthorized login auto-fills on public terminals.</li>
+                    <li>Any unauthorized access attempt, credential sharing, or manipulation of client-side validation logic is a breach of security and will lead to an immediate access ban.</li>
+                </ul>
+            </div>
+
+            <div class="terms-section">
+                <h2>4. Automated Systems & Bot Regulations</h2>
+                <p>When interacting with our community systems, registration endpoints, or official Telegram bots:</p>
+                <ul>
+                    <li>Users must not flood, spam, or submit fake transaction or registration details (such as falsified payment references or TrxIDs).</li>
+                    <li>Automated scraping, brute-forcing API keys, or sending unauthorized requests to bypass server security controls will trigger an automated IP block.</li>
+                </ul>
+            </div>
+
+            <div class="terms-section">
+                <h2>5. Intellectual Property & DMCA Policy</h2>
+                <p>EduPDF Hub respects intellectual property rights. If you are a copyright holder and believe that any file indexed or made available on this service infringes upon your copyright, please submit a formal DMCA removal request to our administrative team with proof of ownership.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>6. Disclaimer of Warranties & Limitation of Liability</h2>
+                <p>All services, files, and tools are provided on an "as is" and "as available" basis without warranties of any kind. EduPDF Hub does not guarantee uninterrupted operation, server uptime, or third-party host availability (such as Telegram or database storage providers).</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>7. Modifications to Terms</h2>
+                <p>We reserve the right to revise or modify these Terms and Conditions at any time. Continued use of the website following any modifications constitutes acceptance of the updated terms.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>8. Contact Information</h2>
+                <p>For questions or support regarding these terms, please contact our administrative team through our official Telegram community channel.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            &copy; 2026 EduPDF Hub. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Theme Switcher Script -->
+    <script>
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            const icon = document.querySelector('#themeToggleBtn i');
+            icon.className = target === 'dark' ? 'bi bi-sun' : 'bi bi-moon-stars';
+        }
+    </script>
+</body>
+</html>
