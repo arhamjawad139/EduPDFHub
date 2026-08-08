@@ -20,6 +20,15 @@
                 }
             },
 
+          //add Terms and Conditons page
+          function openTermsModal() {
+    document.getElementById('termsModal').style.display = 'flex';
+  }
+
+  function closeTermsModal() {
+    document.getElementById('termsModal').style.display = 'none';
+  }
+
             // Default seed data structure if JSONBin is completely empty
             defaultData: {
                 categories: ['Primary', 'Secondary', 'SSC', 'HSC', 'Diploma', 'University', 'Job Preparation'],
