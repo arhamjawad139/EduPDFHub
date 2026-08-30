@@ -4,4 +4,4 @@
             document.documentElement.setAttribute('data-theme', target);
             const icon = document.querySelector('#themeToggleBtn i');
             icon.className = target === 'dark' ? 'bi bi-sun' : 'bi bi-moon-stars';
-        }
+}
