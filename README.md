@@ -1,3 +1,12 @@
-EduPDFHub This web for educational content and all book pdf 
+Shikkhavault Is a free PDF Library for student you can change/modify our code for more efficient our project 
 
-all css/js file in src/css   src/js folder all html/ pages in public folder 
+
+
+
+File Structurem:  
+
+📂Puplic/ 📄index.html,📄 terms-&-condition.html, icon.png.
+
+📂src/ 📂CSS/ 📄 home.css, 📄terms.css
+       📂JS/  📄 script.js,📄 terms.js
+
