@@ -3,7 +3,7 @@ Shikkhavault Is a free PDF Library for student you can change/modify our code fo
 
 
 
-File Structurem:  
+File Structure:  
 
 📂Puplic/ 📄index.html,📄 terms-&-condition.html, icon.png.
 
